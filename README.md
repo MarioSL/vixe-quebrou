@@ -1,25 +1,27 @@
-# Vixe Quebrou
+# VixeQuebrou
 
-Este projeto está sendo desenvolvido na disciplina de Tópicos Especiais - Angular do curso de TSI da UTFPR - Universidade Tecnológica Federal do Paraná - Brasil
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
-É um sistema para que alunos e servidores possam apontar problemas de infraestrutura ou informática no campus da UTFPR de Guarapuava. O usuário pode identificar um problema, descreve-lo (com opção de foto) e submeter via sistema para informar aos alunos, servidores e usuários responsáveis pela correção. A publicação da ocorrência se torna pública e também o seu estado de correção. Os usuários competentes poderão visualizar o problema e providenciar a resolução. Com isso, a ideia é que tanto o processo de notificar um problema quanto a solução seja mais rápido, uma vez que toda a comunidade estará acompanhando e cobrando a resolução do problema. 
- 
-## Principais Funcionalidades
-+ Cadastro de categorias de problemas.
-+ Formulário para submissão de problemas.
-+ Apresentação da lista de problemas ao servidor responsável pela solução.
-+ Apresentação da lista de problemas submetidos por cada usuário.
-+ Alteração do estado dos problemas
-+ Edição dos dados dos usuários
-+ Operações de CRUD sobre os problemas cadastrados
-+ Apresentação da tela de detalhes de cada problema
+## Development server
 
-## Tecnologias
-+ Angular 2+
-+ TypeScript
-+ Materialize com layout responsivo
-+ NodeJS
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Ferramentas
-+ VSCode
-+ Angular CLI
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

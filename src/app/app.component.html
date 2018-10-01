@@ -1,0 +1,53 @@
+<header>
+  <div class="navbar-fixed" style="z-index: 1001 !important;">
+    <nav>
+      <div class="nav-wrapper">
+        <div class="container">
+          <a class="brand-logo">
+            <img class="utf-logo" src="assets/images/logo.png" />
+          </a>
+          <a materialize="sideNav" href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a>Usuário</a></li>
+            <li><a>Admin</a></li>
+            <li class="divider"></li>
+            <li><a>Sair</a></li>
+          </ul>
+          <ul class="side-nav center" id="mobile-demo">
+            <div class="row">
+              <div class="col s8 offset-s2">
+                <div class="center">
+                  <img class="utf-logo-panel responsive-img" src="assets/images/logo.png">
+                </div>
+              </div>
+            </div>
+            <li><a>Usuário</a></li>
+            <li><a>Admin</a></li>
+            <li><a>Sair</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<!-- rodape-->
+<footer class="page-footer my-primary-color">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 center">
+        <a routerLink="/">
+          <img src="assets/images/logo.png" id="utfpr-footer" class="img-responsive" height="70px" />
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      &copy; Copyright <span>ANO</span> - Todos os direitos reservados
+    </div>
+  </div>
+</footer>
