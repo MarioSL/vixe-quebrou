@@ -1,0 +1,27 @@
+<utf-title [title]="'Categorias'"></utf-title>
+<utf-form-category (newCategoryEmitter)="onAddCategory($event)"></utf-form-category>
+<div class="row">
+
+  <div class="col s12" *ngIf="categories.length == 0">
+    <i class="material-icons my-empty-face center-align">mood_bad</i>
+    <h3 class="center-align">Não há resultados!</h3>
+  </div>
+  <utf-item-category *ngFor="let c of categories" [category]="c.categoryName"
+                     [icon]="c.iconName" class="col s12 m6"
+                     (deleteEmitter)="onDeleteItem($event)">
+
+  </utf-item-category>
+  <p class="col s12">
+    Elétrica - flash_on |
+    Limpeza - format_paint |
+    Pátio - local_florist |
+    Hidráulica - opacity |
+    Mobiliário - event_seat |
+    Alvenaria - account_balance |
+    Rede - device_hub |
+    Computadores - computer |
+    Telefone - call
+  </p>
+
+
+</div>

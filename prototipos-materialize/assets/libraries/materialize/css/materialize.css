@@ -3400,7 +3400,7 @@ input[type=range] + .thumb {
   padding: 0 !important;
 }
 
-/* This is needed for some mobile phones to display the Google Icon font properly */
+/* This is needed for some mobile phones to display the Google Category font properly */
 .material-icons {
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: 'liga';

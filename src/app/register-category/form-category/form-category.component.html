@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col s12">
+    <label for="input-category">Nova Categoria</label>
+    <input id="input-category" type="text" [(ngModel)]="category" required #inputCategory>
+    <label for="select-category">Ícones</label>
+    <select materialize="material_select" id="select-category" [(ngModel)]="iconSelected">
+      <option value="-1" disabled>Nenhuma</option>
+      <option *ngFor="let i of icons" [ngValue]="i">{{i}}
+      </option>
+    </select>
+    <button class="btn blue right" (click)="onClick()">CADASTRAR</button>
+  </div>
+</div>
