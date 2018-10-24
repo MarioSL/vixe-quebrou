@@ -1,26 +1,22 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import {BrowserModule} from "@angular/platform-browser";
+import {NgModule} from "@angular/core";
 
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
+import {AppRoutingModule} from "./app-routing.module";
+import {AppComponent} from "./app.component";
 
-import { MaterializeModule } from "angular2-materialize";
-import { TitleComponent } from "./register-category/title/title.component";
-import { RegisterCategoryComponent } from "./register-category/register-category.component";
-import { FormCategoryComponent } from "./register-category/form-category/form-category.component";
-import { ItemCategoryComponent } from "./register-category/item-category/item-category.component";
-import {FormsModule} from "@angular/forms";
+import {MaterializeModule} from "angular2-materialize";
+import {CoreModule} from "./core";
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TitleComponent,
-    RegisterCategoryComponent,
-    FormCategoryComponent,
-    ItemCategoryComponent
+    AppComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, MaterializeModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, MaterializeModule,
+    CoreModule, SharedModule],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}

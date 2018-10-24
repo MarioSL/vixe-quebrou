@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Category} from "../../core/model/category.model";
+import {Category} from "../../../core/model/category.model";
 
 @Component({
   selector: 'utf-item-category',

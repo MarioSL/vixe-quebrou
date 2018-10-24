@@ -4,12 +4,13 @@
       <div class="nav-wrapper">
         <div class="container">
           <a class="brand-logo">
-            <img class="utf-logo" src="assets/images/logo.png" />
+            <img class="utf-logo" src="assets/images/logo.png"/>
           </a>
-          <a materialize="sideNav" href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <a materialize="sideNav" href="#" data-activates="mobile-demo" class="button-collapse"><i
+            class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a>Usuário</a></li>
-            <li><a>Admin</a></li>
+            <li><a routerLink="/u">Usuário</a></li>
+            <li><a routerLink="/a">Admin</a></li>
             <li class="divider"></li>
             <li><a>Sair</a></li>
           </ul>
@@ -31,7 +32,11 @@
   </div>
 </header>
 <main class="container">
-  <utf-register-category></utf-register-category>
+  <utf-title [title]="'Área do Visitante'"></utf-title>
+  <p>Clique para ir para a área desejada</p>
+  <li><a routerLink="/u">Usuário</a></li>
+  <li><a routerLink="/a">Admin</a></li>
+  <router-outlet></router-outlet>
 </main>
 <!-- rodape-->
 <footer class="page-footer my-primary-color">
@@ -39,7 +44,7 @@
     <div class="row">
       <div class="col s12 center">
         <a routerLink="/">
-          <img src="assets/images/logo.png" id="utfpr-footer" class="img-responsive" height="70px" />
+          <img src="assets/images/logo.png" id="utfpr-footer" class="img-responsive" height="70px"/>
         </a>
       </div>
 
