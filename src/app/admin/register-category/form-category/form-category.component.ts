@@ -1,5 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {Category} from "../../icon.model";
+import {Category} from "../../core/model/category.model";
 
 @Component({
   selector: 'utf-form-category',
@@ -36,7 +36,7 @@ export class FormCategoryComponent implements OnInit {
     if (!categories) {
       categories = [];
     }
-    categories.push(category)
+    categories.push(category);
     localStorage.setItem('categories', JSON.stringify(categories));
     alert("A categoria foi salva com sucesso!");
     this.newCategoryEmitter.emit(category);

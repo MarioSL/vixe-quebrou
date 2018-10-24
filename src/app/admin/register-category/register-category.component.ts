@@ -1,4 +1,4 @@
-import {Category} from "./../icon.model";
+import {Category} from "../core/model/category.model";
 import {Component, OnInit} from "@angular/core";
 
 @Component({
