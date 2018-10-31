@@ -1,3 +1,18 @@
-<p>
-  user works!
-</p>
+<div class="row my-tab-continuation">
+  <ul class="tabs" materialize="tabs">
+    <li class="tab col s4">
+      <a class="active black-text"
+         [routerLink]="[routeNewCall]">Novo Chamado</a>
+    </li>
+    <li class="tab col s4">
+      <a class="black-text" [routerLink]="['/u/meus-chamados']">Meus Chamados</a>
+    </li>
+    <li class="tab col s4">
+      <a class="black-text" [routerLink]="['/u/meus-dados']">Meus Dados</a>
+    </li>
+  </ul>
+</div>
+
+<div class="row">
+  <router-outlet></router-outlet>
+</div>

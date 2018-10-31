@@ -7,10 +7,12 @@ import {AppComponent} from "./app.component";
 import {MaterializeModule} from "angular2-materialize";
 import {CoreModule} from "./core";
 import {SharedModule} from "./shared/shared.module";
+import { IndexComponent } from './core/index/index.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IndexComponent
   ],
   imports: [BrowserModule, AppRoutingModule, MaterializeModule,
     CoreModule, SharedModule],

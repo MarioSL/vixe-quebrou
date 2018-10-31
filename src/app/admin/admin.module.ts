@@ -6,6 +6,9 @@ import {FormCategoryComponent} from "./register-category/form-category/form-cate
 import {ItemCategoryComponent} from "./register-category/item-category/item-category.component";
 import {AdminComponent} from './admin.component';
 import {AdminRoutingModule} from "./admin-routing.module";
+import {MaterializeModule} from "angular2-materialize";
+import { CallListComponent } from './call-list/call-list.component';
+import { ConfigurationComponent } from './configuration/configuration.component';
 
 @NgModule({
   imports: [
@@ -15,7 +18,9 @@ import {AdminRoutingModule} from "./admin-routing.module";
     RegisterCategoryComponent,
     FormCategoryComponent,
     ItemCategoryComponent,
-    AdminComponent]
+    AdminComponent,
+    CallListComponent,
+    ConfigurationComponent]
 })
 export class AdminModule {
 }

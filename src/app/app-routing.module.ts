@@ -1,5 +1,7 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
+import {IndexComponent} from "./core/index/index.component";
+import {ErrorPageComponent} from "./core/error-page/error-page.component";
 
 const routes: Routes = [
   {
@@ -12,9 +14,9 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '',
-    pathMatch: 'full'
-  }
+    component: IndexComponent
+  },
+  {path: '**', component: ErrorPageComponent}
 ];
 
 @NgModule({

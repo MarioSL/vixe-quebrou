@@ -1,3 +1,17 @@
-<p>
-  admin works!
-</p>
+<div class="row my-tab-continuation">
+  <ul class="tabs" materialize="tabs">
+    <li class="tab col s4">
+      <a class="active black-text" routerLink="/a/cadastra-categoria">Categorias</a>
+    </li>
+    <li class="tab col s4">
+      <a class="black-text" routerLink="/a/chamados">Chamados</a>
+    </li>
+    <li class="tab col s4">
+      <a class="black-text" routerLink="/a/configuracoes">Configurações</a>
+    </li>
+  </ul>
+</div>
+
+<div class="row">
+  <router-outlet></router-outlet>
+</div>

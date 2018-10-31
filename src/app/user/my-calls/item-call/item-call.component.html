@@ -1,0 +1,21 @@
+<div class="col s12 amber center my-item-call-header">
+  {{call.category}}
+</div>
+<div class="card-panel center">
+  <div class="row flow-text">
+    <p>{{call.code}}</p>
+    <p>{{call.date}}</p>
+    <p>{{call.title}}</p>
+    <p>{{call.description}}</p>
+    <div class="col s12 m6">
+      <a class="btn blue"
+         [routerLink]="['/u/edita-chamado', call.code]">Editar</a>
+    </div>
+    <div class="col s12 m6">
+      <button class="btn red"
+              (click)="onDelete(call.code)">Excluir</button>
+    </div>
+  </div>
+
+</div>
+

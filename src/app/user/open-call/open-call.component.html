@@ -1,0 +1,19 @@
+<utf-title [title]="'Novo Chamado'"></utf-title>
+<div class="row">
+  <div class="col s12">
+    <label for="select-category">Escolha uma categoria:</label>
+    <select materialize="material_select" id="select-category" [(ngModel)]="call.category">
+      <option value="-1" disabled>Nenhuma</option>
+      <option *ngFor="let i of categories" [ngValue]="i.categoryName">{{i.categoryName}}
+      </option>
+    </select>
+    <label for="input-title">Título</label>
+    <input id="input-title" type="text" [(ngModel)]="call.title" required>
+    <label for="input-code">Patrimônio</label>
+    <input id="input-code" type="text" [(ngModel)]="call.code" required>
+    <label for="textarea-description">Descrição</label>
+    <textarea id="textarea-description" class="materialize-textarea" [(ngModel)]="call.description" rows="10" required></textarea>
+    <button class="btn blue right" (click)="onClick()">CADASTRAR</button>
+  </div>
+</div>
+
