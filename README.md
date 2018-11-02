@@ -33,4 +33,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 | Base | [base](https://github.com/utfpr-gp/vixe-quebrou/tree/base)     |
 | Data Bindings| [register-category](https://github.com/utfpr-gp/vixe-quebrou/tree/register-category)     |
 | Modules| [modules](https://github.com/utfpr-gp/vixe-quebrou/tree/modules)     |
-| Routing| [modules](https://github.com/utfpr-gp/vixe-quebrou/tree/routing)     |
+| Routing| [routing](https://github.com/utfpr-gp/vixe-quebrou/tree/routing)     |
